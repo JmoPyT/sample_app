@@ -1,0 +1,11 @@
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %> <!-- ajout de feuilles de style -->
+<!-- <%= stylesheet_link_tag('blueprint/screen', {:media => 'screen'}) %> -->
+<!-- les parenthèses sont optionnelles pour une fonction, les accolades sont optionnelle pour le dernier argument d'une fonction -->
+<%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+
+<%= stylesheet_link_tag 'custom', :media => 'screen' %>

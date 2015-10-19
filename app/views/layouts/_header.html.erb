@@ -1,0 +1,17 @@
+<header>
+	<% logo = image_tag("ror.png", :alt => "Application Exemple", :class => "round") %>
+	<%= link_to logo, root_path %> <!-- définit la variable locale logo pour la balise image et la lie à la ligne suivante -->
+	<nav class="round">
+		<ul>
+			<li>
+				<%= link_to "Accueil", root_path %>
+			</li>
+			<li>
+				<%= link_to "Aide", help_path %>
+			</li>
+			<li>
+				<%= link_to "Inscription", signup_path %>
+			</li>
+		</ul>
+	</nav>
+</header>

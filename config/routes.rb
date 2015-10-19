@@ -1,7 +1,20 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-  get 'pages/contact'
-  get 'pages/about'
+  #get 'pages/home'
+  #get 'pages/contact'
+  #get 'pages/about'
+  #get 'pages/help'
+  
+  #root :to => 'pages#home' # ancienne version
+  root 'pages#home'
+  
+  #match '/contact', :to => 'pages#contact' # on ne fait plus match mais il faut définir la methode HTTP utilisée
+  get '/contact', :to => 'pages#contact' # on ne fait plus mathc
+  get '/about',   :to => 'pages#about'
+  get '/help',    :to => 'pages#help'
+  
+  get '/signup',  :to => 'users#new'
+  get 'users/new'
+    
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
